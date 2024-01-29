@@ -41,7 +41,7 @@
                                 @endif
                             </div>
                         </div>
-                        <form action="{{ url('/add_category')}}" method="post">
+                        <form action="{{ route('add-category')}}" method="post">
                             @csrf
                             <div class="col-md-12 mb-lg-0 mb-4">
                                 <div class="card mt-4">
@@ -93,7 +93,7 @@
                               <h3 class="mb-1 text-dark font-weight-bold text-sm">{{$data->category_name}}</h3>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                              <a onclick="return confirm('Are You Sure You Want To Delete This?')" href="{{ url('/delete_category',$data->id)}}" class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-icons delete-lg position-relative me-1">delete</i> Delete</a>
+                              <a onclick="return confirm('Are You Sure You Want To Delete This?')" href="{{ route('delete-category',$data->id)}}" class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-icons delete-lg position-relative me-1">delete</i> Delete</a>
                             </div>
                           </li>
                           @endforeach
