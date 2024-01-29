@@ -644,88 +644,22 @@
                                             </button></div>
                                         <ul id="menu-verticalmenu2-1"
                                             class="nav vertical-megamenu mallonmega mallonmenures">
+                                            {{-- @foreach ($category as $category) --}}
+                                                
+                                           
                                             <li
                                                 class="dropdown menu-sexual-reproductive-health mallonmenu-custom level1">
                                                 <a href="product-category/sexual-reproduction-health/index.html"
                                                     class="item-link dropdown-toggle" data-toogle="dropdown"><span
-                                                        class="have-title"><span class="menu-title">Sexual &amp;
-                                                            Reproductive Health</span></span></a>
-                                                <ul class="dropdown-menu">
+                                                        class="have-title"><span class="menu-title">Category Name here</span></span></a>
+                                                {{-- <ul class="dropdown-menu">
                                                     <li class="column-1 menu-male-sexual-health"><a
                                                             href="product-category/sexual-reproduction-health/male-sexual-health/index.html"><span
                                                                 class="have-title"><span class="menu-title">Male
                                                                     Sexual Health</span></span></a></li>
-                                                </ul>
+                                                </ul> --}}
                                             </li>
-                                            <li class="dropdown menu-beauty-personal-care mallonmenu-custom level1"><a
-                                                    href="product-category/personal-care/index.html"
-                                                    class="item-link dropdown-toggle" data-toogle="dropdown"><span
-                                                        class="have-title"><span class="menu-title">Beauty &amp;
-                                                            Personal Care</span></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="column-1 menu-feminine-hygiene"><a
-                                                            href="product-category/personal-care/feminine-hygiene-personal-care/index.html"><span
-                                                                class="have-title"><span class="menu-title">Feminine
-                                                                    Hygiene</span></span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown menu-multivitamins-wellness-supplements mallonmenu-custom level1">
-                                                <a href="product-category/multivitamins-and-wellness-supplements/index.html"
-                                                    class="item-link dropdown-toggle" data-toogle="dropdown"><span
-                                                        class="have-title"><span class="menu-title">Multivitamins
-                                                            &amp; Wellness Supplements</span></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="column-1 menu-immunity-support"><a
-                                                            href="product-category/multivitamins-and-wellness-supplements/immunity-support/index.html"><span
-                                                                class="have-title"><span class="menu-title">Immunity
-                                                                    Support</span></span></a></li>
-                                                    <li class="column-1 menu-joint-and-bone-supplements"><a
-                                                            href="product-category/multivitamins-and-wellness-supplements/joint-and-bone-supplements/index.html"><span
-                                                                class="have-title"><span class="menu-title">Joint and
-                                                                    Bone Supplements</span></span></a></li>
-                                                    <li class="column-1 menu-kids-supplements"><a
-                                                            href="product-category/multivitamins-and-wellness-supplements/kids-supplements/index.html"><span
-                                                                class="have-title"><span class="menu-title">Kids
-                                                                    Supplements</span></span></a></li>
-                                                    <li class="column-1 menu-omega-supplements"><a
-                                                            href="product-category/multivitamins-and-wellness-supplements/omega-supplements/index.html"><span
-                                                                class="have-title"><span class="menu-title">Omega
-                                                                    Supplements</span></span></a></li>
-                                                    <li class="column-1 menu-prenatal-post-natal-vitamins"><a
-                                                            href="product-category/multivitamins-and-wellness-supplements/prenatal-post-natal-vitamins/index.html"><span
-                                                                class="have-title"><span class="menu-title">Prenatal
-                                                                    &amp; Post-Natal Vitamins</span></span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown menu-home-health-care mallonmenu-custom level1"><a
-                                                    href="product-category/home-health-care/index.html"
-                                                    class="item-link dropdown-toggle" data-toogle="dropdown"><span
-                                                        class="have-title"><span class="menu-title">Home Health
-                                                            Care</span></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="menu-test-kits"><a
-                                                            href="product-category/home-health-care/test-kits/index.html"><span
-                                                                class="have-title"><span class="menu-title">Test
-                                                                    Kits</span></span></a></li>
-                                                    <li class="menu-first-aid-sanitization"><a
-                                                            href="product-category/home-health-care/first-aid/index.html"><span
-                                                                class="have-title"><span class="menu-title">First Aid
-                                                                    &amp; Sanitization</span></span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown menu-health-and-medicine mallonmega-menu level1"><a
-                                                    href="product-category/health-and-medicine/index.html"
-                                                    class="item-link dropdown-toggle" data-toogle="dropdown"><span
-                                                        class="have-title"><span class="menu-title">Health and
-                                                            Medicine</span></span></a>
-                                                <ul class="dropdown-menu nav-level1 column-1">
-                                                    <li class="column-1 menu-gut-health"><a
-                                                            href="product-category/health-and-medicine/gut-health/index.html"><span
-                                                                class="have-title"><span class="menu-title">Gut
-                                                                    Health</span></span></a></li>
-                                                </ul>
-                                            </li>
+                                            {{-- @endforeach --}}
                                         </ul>
                                     </div>
                                 </div>
@@ -755,23 +689,25 @@
                                             <ul id="menu-main-1"
                                                 class="nav nav-pills nav-mega mallonmega mallonmenures">
                                                 <li class="active menu-home mallonmenu-custom level1"><a
-                                                        href="index.html" class="item-link"><span
+                                                        href="{{ route('home')}}" class="item-link"><span
                                                             class="have-title"><span
                                                                 class="menu-title">Home</span></span></a></li>
                                                 <li class="menu-shop mallonmenu-custom level1"><a
-                                                        href="shop/index.html" class="item-link"><span
+                                                        href="{{ route('shop')}}" class="item-link"><span
                                                             class="have-title"><span
                                                                 class="menu-title">Shop</span></span></a></li>
                                                 <li class="menu-contact-us mallonmenu-custom level1"><a
-                                                        href="contact-us/index.html" class="item-link"><span
+                                                        href="{{ route('contact')}}" class="item-link"><span
                                                             class="have-title"><span class="menu-title">Contact
                                                                 us</span></span></a></li>
+
                                                 <li class="menu-about-us mallonmenu-custom level1"><a
-                                                        href="about-us/index.html" class="item-link"><span
+                                                        href="{{ route('about')}}" class="item-link"><span
                                                             class="have-title"><span class="menu-title">About
                                                                 Us</span></span></a></li>
+                                                                
                                                 <li class="menu-faq mallonmenu-custom level1"><a
-                                                        href="faq-need-help/index.html" class="item-link"><span
+                                                        href="{{ route('faq')}}" class="item-link"><span
                                                             class="have-title"><span
                                                                 class="menu-title">FAQ!</span></span></a></li>
 

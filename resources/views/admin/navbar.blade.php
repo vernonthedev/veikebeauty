@@ -58,7 +58,7 @@ data-scroll="true">
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a class="dropdown-item border-radius-md" href="">
+                        
                             <div class="d-flex py-1">
                                 
                                 <div class="d-flex flex-column justify-content-center">
@@ -72,7 +72,7 @@ data-scroll="true">
                                    
                                 </div>
                             </div>
-                        </a>
+                        
                     </li>
                     
                 </ul>
@@ -81,8 +81,7 @@ data-scroll="true">
                 
             </li>
             
-            <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
-            data-bs-toggle="dropdown" aria-expanded="false">
+            
             <h6>Manage Account</h6>
         </a>
         </ul>
