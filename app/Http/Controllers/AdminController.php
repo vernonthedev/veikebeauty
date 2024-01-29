@@ -78,4 +78,59 @@ class AdminController extends Controller
         $data = Product::all();
         return view('admin.show_products', compact('data'));
     }
+
+    // Delete product if specified
+    public function delete_product($id)
+    {
+        $data = Product::find($id);
+        $data->delete();
+        return redirect()->back()->with('message', 'Product Deleted Successfully');
+    }
+
+    // Edit and update product info
+    public function update_product($id)
+    {
+        $product = Product::find($id);
+        $category = Category::all();
+        return view('admin.update_product', compact('product', 'category'));
+    }
+
+    public function update_product_confirm(Request $request,$id)
+    {
+        $product = Product::find($id);
+        $product->title = $request->title;
+        $product->short_description = $request->short_description;
+        $product->long_description = $request->long_description;
+        $product->price = $request->price;
+        $product->brand = $request->brand;
+        $product->discount_price = $request->discount_price;
+
+        // Check if the checkbox is checked, and set the boolean value accordingly
+        $product->is_featured = $request->has('is_featured');
+        $product->is_new_arrival = $request->has('is_new_arrival');
+        $product->is_deal_of_the_day = $request->has('is_deal');
+
+        $product->quantity = $request->quantity;
+
+        $product->meta_title = $request->meta_title;
+        $product->meta_description = $request->meta_description;
+        $product->category = $request->category;
+
+        // getting the image by setting each image with unique names by using the time of upload
+        // and will be saved under the /product folder
+        $image = $request->image;
+        // if we have an image, that's when we should edit it, 
+        // but incase we don't recieve it, continue without erroring
+        if($image){
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->image->move('product', $imagename);
+            $product->image = $imagename;
+        }
+       
+
+        //save the product
+        $product->save();
+
+        return redirect()->back()->with('message', 'Product Successfully Updated.');
+    }
 }
