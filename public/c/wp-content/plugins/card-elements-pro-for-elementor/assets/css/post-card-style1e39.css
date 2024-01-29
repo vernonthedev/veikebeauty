@@ -1,0 +1,978 @@
+/* Start Common Post Card CSS */
+.grid-container {
+    display: grid;
+    grid-column-gap: 30px;
+}
+.post-card_excerpt {
+    margin-bottom: 0px; 
+}
+.post-card article {
+    margin-bottom: 40px;
+}
+/* End Common Post Card CSS */
+
+/* Start Post Card 1 CSS */
+.post-card-style-1 .post-module {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.post-card-style-1 .post-module:hover {
+    -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+.post-card-style-1 .post-module:hover .thumbnail img,
+.post-card-style-1 .hover .thumbnail img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .6;
+}
+.post-card-style-1 .post-module .thumbnail {
+    background: #000000;
+    height: auto;
+    overflow: hidden;
+}
+.post-card-style-1 .thumb_title {
+    color: #fff;
+    padding: 30px;
+}
+.post-card-style-1 .post-module .thumbnail .date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #e74c3c;
+    width: 60px;
+    height: 60px;
+    padding: 12.5px 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.post-card-style-1 .date .post-card_date_color,
+.post-card-style-1 .post-content .description .post-card_read-more {
+    background: transparent;
+}
+.post-card-style-1 .post-module .thumbnail .date .day {
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+}
+.post-card-style-1 .column_grid_3 .post-module .thumbnail .date .day {
+    font-size: 12px;
+    margin-top: -3px;
+}
+.post-card-style-1 .column_grid_4 .post-module .thumbnail .date .day,
+.post-card-style-1 .column_grid_5 .post-module .thumbnail .date .day,
+.post-card-style-1 .column_grid_6 .post-module .thumbnail .date .day {
+    font-size: 12px;
+    margin-top: -3px;
+}
+.post-card-style-1 .post-module .thumbnail .date .month {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.post-card-style-1 .post-module .thumbnail img {
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.post-card-style-1 .post-module .post-content {
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 30px;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.post-card-style-1 .post-module .post-content .category {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    background: #e74c3c;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-card-style-1 .post-module .post-content .category span.cat-links,
+.post-card-style-1 .post-module .post-content .category span.cat-links a {
+    color: #fff;
+}
+.post-card-style-1 .post-module .post-content .category span.cat-links a:hover {
+    color: #111;
+}
+.post-card-style-1 .post-module .post-content h2 {
+    font-size: 24px;
+}
+.post-card-style-1 .post-module .post-content .title {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #333333;
+    font-weight: 700;
+}
+.post-card-style-1 .post-module .post-content .title a {
+    color: #333333;
+}
+.post-card-style-1 .post-module .post-content .sub_title {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: 400;
+}
+.post-card-style-1 .description .entry-read-more {
+    color: #e74c3c;
+}
+.post-card-style-1 .post-module .post-content .description {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+.elementor .post-card-style-1 .post-module .post-content .post-meta {
+    margin: 30px 0 0;
+    color: #999999;
+    font-size: 14px;
+}
+.elementor .post-card-style-1 .post-module .post-content .post-meta .timestamp {
+    margin: 0 16px 0 0;
+}
+.elementor .post-card-style-1 .post-module .post-content .post-meta a {
+    color: #999999;
+    text-decoration: none;
+}
+.elementor .post-card-style-1 .post-module span {
+    color: #999999;
+}
+.post-card-style-1 .post-meta .fa-user,
+.post-card-style-1 .post-meta .fa-tags,
+.post-card-style-1 .post-meta .fa-comments {
+    margin-right: 5px;
+}
+.post-card-style-1 .post-card-tags {
+    display: inline-block;
+
+}
+.post-card-style-1 .byauthor,
+.post-card-style-1 .comments-link {
+    margin-right: 5px;
+}
+.post-card-style-1 .post-content .description {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
+.post-card-style-1 .column {
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.post-card-style-1 .column .demo-title {
+    margin: 0 0 15px;
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.post-card-style-1 .info {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+.post-card-style-1 .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+.post-card-style-1 .info span {
+    color: #666666;
+    font-size: 12px;
+}
+.post-card-style-1 .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.post-card-style-1 .info span .fa {
+    color: #e74c3c;
+}
+/* End Post Card 1 CSS */
+
+/* Start Post Card 2 CSS */
+.post-card-style-2 .card-image {
+    overflow: hidden;
+}
+.post-card-style-2 .text-center {
+    text-align: center;
+}
+.post-card-style-2 .padding-tb {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+.post-card-style-2 .post-card-image .noimage {
+    padding: 30px 30px;
+    background: #000;
+}
+.post-card-style-2 .post-card-image .thumb_title {
+    color: #fff;
+}
+.post-card-style-2 .card-image img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+.post-card-style-2 .card_title h2::before { 
+    display: none;
+}
+.post-card-style-2 .post-content {
+    position: relative;
+    padding: 30px;
+}
+.post-card-style-2 .description .entry-read-more {
+    color: #0274be;
+    font-weight: 400;
+    display: block;
+}
+.post-card-style-2 .post-module .post-card-content-bg-box {
+    background: #FFFFFF;
+}
+.post-card-style-2 .date .post-card_date_color,
+.post-card-style-2 .post-content .description .post-card_read-more, 
+.post-card-style-2 .post-card_category {
+    background-color: transparent;
+}
+.post-card-style-2 .card_title,
+.post-card-style-2 .description,
+.post-card-style-2 .card_meta,
+.post-card-style-2 .card_action {
+    text-align: left;
+}
+.post-card-style-2 .card_meta a,
+.post-card-style-2 .card_author .byauthor,
+.post-card-style-2 .card_author .post-card-tags {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #0274be;
+}
+.post-card-style-2 .card_action .byauthor:hover a,
+.post-card-style-2 .card_action .comments-link:hover i.fa,
+.post-card-style-2 .card_action .comments-link:hover a,
+.post-card-style-2 .card_action .tags-links:hover,
+.post-card-style-2 .card_action .tags-links:hover i.fa,
+.post-card-style-2 .card_action .tags-links:hover a {
+    color: #111;
+}
+.post-card-style-2 .card_author .byauthor .author,
+.post-card-style-2 .card_author .comments-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+.post-card-style-2 .card_author .byauthor,
+.post-card-style-2 .card_author .comments-link {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #0274be;
+}
+.post-card-style-2 .card_author .fa {
+    margin-right: 5px;
+}
+.post-card-style-2 .card_author .post-card-tags{
+    display: inline-block;
+    vertical-align: middle;
+}
+.post-card-style-2 .description {
+    font-size: 16px;
+}
+.post-card-style-2 .card_meta {
+    color: #3498db;
+    width: 60%;
+    float: left;
+    margin-bottom: 15px;
+}
+.post-card-style-2 .post-content .post-card_category a {
+    color: #3498db;
+}
+.post-card-style-2 .card_meta a:hover {
+    color: #111;
+}
+.post-card-style-2 .post-card_date .day {
+    width: 40%;
+    font-size: 18px;
+    color: #bbb;
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+.post-card-style-2 .post-card_date .day:hover {
+    color: #bbb;
+}
+.post-card-style-2 .post-card-content-box {
+    background-color: #fff;
+}
+.post-card-style-2 .card_title .post-card_title a {
+    text-decoration: none;
+    color: #444;
+    transition: all 0.5s ease;
+    margin: 10px 0px;
+    display: block;
+}
+.post-card-style-2 .card_title h2 {
+    font-size: 24px;
+}
+.post-card-style-2 .card_title .post-card_title a:hover {
+    color: #2980b9;
+}
+.post-card-style-2 .card_action {
+    overflow: hidden;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.post-card-style-2 .card_author img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 0.6em;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.12), 0 2px 4px rgba(0,0,0, 0.24);
+}
+.post-card-style-2 .card_title a.entry-read-more:hover {
+    color: #111;
+}
+/* End Post Card 2 CSS */
+
+/* Start Post Card 3 CSS */
+.post-card-style-3 .post-module {
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.post-card-style-3 .post-module:hover {
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+.post-card-style-3 .post-media {
+    position: relative;
+    margin-bottom: 30px;
+}
+.post-card-style-3 h2::before {
+    display: none;
+}
+.post-card-style-3 .post-media .date{
+    position: absolute;
+    bottom: -15px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1abc9c;
+    text-shadow: -2px -2px #fff, -2px 2px #fff, 2px -2px #fff, 2px 2px #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1abc9c;
+    padding: 5px 15px;
+    line-height: 48px;
+} 
+.post-card-style-3 .category {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.post-card-style-3 .category-auth .category {
+    color: #1abc9c;
+}
+.post-card-style-3 .only-title {
+    min-height: 200px;
+    background: #111;
+}
+.post-card-style-3 .only-title h3.thumb_title {
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+}
+.post-card-style-3 .category .cat-links,
+.post-card-style-3 .category .cat-links a,
+.post-card-style-3 .byauthor i.fa,
+.post-card-style-3 .byauthor a,
+.post-card-style-3 .tags-links,
+.post-card-style-3 .tags-links i.fa,
+.post-card-style-3 .tags-links a,
+.post-card-style-3 .comments-link,
+.post-card-style-3 .comments-link i.fa,
+.post-card-style-3 .comments-link a { 
+    font-size: 16px;
+    color: #1abc9c;
+}
+.post-card-style-3 .category .cat-links:hover,
+.post-card-style-3 .category .cat-links a:hover,
+.post-card-style-3 .byauthor:hover i.fa,
+.post-card-style-3 .byauthor:hover a,
+.post-card-style-3 .tags-links:hover,
+.post-card-style-3 .tags-links:hover i.fa,
+.post-card-style-3 .tags-links:hover a,
+.post-card-style-3 .comments-link:hover,
+.post-card-style-3 .comments-link:hover i.fa,
+.post-card-style-3 .comments-link:hover a,
+.post-card-style-3 .post-text .entry-read-more:hover {
+    color: #111;
+}
+.post-card-style-3 .byauthor i.fa {
+    margin-right: 5px;
+}
+.post-card-style-3 .byauthor {
+    float: right;
+}
+.post-card-style-3 .post-content {
+    text-align: center;
+    display: inline-block;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    padding: 0px 25px;
+}
+.post-card-style-3 .post-content .post-heading .title a {
+    color: #1abc9c;
+    margin-top: 10px;
+}
+.post-card-style-3 .post-content .post-heading .title a:hover {
+    color: #111;
+}
+.post-card-style-3 .post-content .post-heading .post-meta {
+    margin-bottom: 20px;
+}
+.post-card-style-3 .post-content .post-card_category_background {
+    background: transparent;
+}
+.post-card-style-3 .post-content .post-heading .post-meta li {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-right: 16px;
+    position: relative;
+}
+.post-card-style-3 .post-content .post-heading .post-meta > li + li::before {
+    background: #555 none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 4px;
+}
+.post-card-style-3 .post-text .entry-read-more {
+    background: #1abc9c;
+    padding: 5px 10px;
+    text-align: left;
+    left: 0px;
+    float: left;
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.post-card-style-3 .post-content .post-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-align: left;
+}
+.post-card-style-3 .post-content .post-text p {
+    font-size: 16px;
+    text-align: left;
+}
+.post-card-style-3 .post-card-tags {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.post-card-style-3 .post-footer {
+    width: 100%;
+    float: left;
+    margin: 0px 0px 10px;
+}
+.post-card-style-3 .tags-links i.fa,
+.post-card-style-3 .comments-link i.fa {
+    margin-right: 5px;
+}
+.post-card-style-3 .post-footer .comments {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+/* End Post Card 3 CSS */
+
+
+/* Start Post card 4 css*/
+
+.post-card-style-4 .card_title h2::before { 
+    display: none;
+}
+.post-card-style-4 .blog-post, .blog-category {
+    background: #fff;
+    margin: 0 0 60px 0;
+    border: 1px solid rgba(254, 68, 68, 0.27);
+    -webkit-box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 8px 8px 0 rgba(254, 68, 68, 0.1);
+}
+.post-card-style-4 .post-card-image {
+    position: relative;
+    overflow: hidden;
+}
+.post-card-style-4 .post-card-image img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1 ;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease-out;
+}
+.post-card-style-4 .only-title {
+    min-height: 200px;
+    background: #111;
+}
+.post-card-style-4 .only-title h3.thumb_title {
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+}
+.post-card-style-4 img {
+    max-width: 100%;
+}
+.post-card-style-4 .blog-outer {
+    padding: 25px 40px 0px 40px;
+    text-align: center;
+}
+.post-card-style-4 .meta {
+    display: inline-block;
+    font-size: 16px;
+}
+.post-card-style-4 .meta .tags-links,
+.post-card-style-4 .meta .day,
+.post-card-style-4 .meta .comments-link {
+    border-bottom: 1px solid #fe4444;
+    border-bottom-color: rgb(254, 68, 68);
+    border-color: #fe4444;
+    margin-bottom: 10px;
+}
+.post-card-style-4 .meta .tags-links,
+.post-card-style-4 .meta .tags-links i.fa,
+.post-card-style-4 .meta .tags-links a,
+.post-card-style-4 .meta .day,
+.post-card-style-4 .meta .comments-link,
+.post-card-style-4 .meta .comments-link a,
+.post-card-style-4 .meta .tags-links i.fa,
+.post-card-style-4 .meta .tags-links a,
+.post-card-style-4 .blog-outer .byauthor,
+.post-card-style-4 .blog-outer .byauthor .author a {
+    color: #111;
+    font-size: 18px;
+    display: inline-block;
+}
+.post-card-style-4 .blog-bottom .category .cat-links,
+.post-card-style-4 .blog-bottom .category .cat-links a {
+    color: #111;
+}
+.post-card-style-4 .meta .tags-links:hover,
+.post-card-style-4 .meta .tags-links:hover i.fa,
+.post-card-style-4 .meta .tags-links:hover a,
+.post-card-style-4 .meta .day:hover,
+.post-card-style-4 .meta .comments-link:hover i.fa,
+.post-card-style-4 .meta .comments-link:hover a,
+.post-card-style-4 .blog-outer .byauthor:hover,
+.post-card-style-4 .blog-outer .byauthor:hover .author a,
+.post-card-style-4 .blog-bottom .category:hover .cat-links,
+.post-card-style-4 .blog-bottom .category:hover .cat-links a {
+    color: #fe4444;
+}
+.post-card-style-4 .date {
+    color: #323232;
+    display: inline-block;
+    margin-right: 10px;
+}
+.post-card-style-4 .like-icons, 
+.comments-icon {
+    color: #666;
+}
+.post-card-style-4 .title {
+    font-family: "Ubuntu",sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #313131;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+.post-card-style-4 h2::before {
+    display: none;
+}
+.post-card-style-4 .blog-post h2.post-card_title {
+    text-align: center;
+}
+.post-card-style-4 .blog-post h2.title a {
+    color: #313131;
+    text-align: center;
+}
+.post-card-style-4 .blog-post .title a:hover {
+    color: #fe4444;
+}
+.post-card-style-4 .admin-text {
+    font-family: "Ubuntu",sans-serif;
+    font-size: 14px;
+}
+.post-card-style-4 .byauthor .avatar {
+    border-radius: 50%;
+    display: inline-block;
+}
+.post-card-style-4 .byauthor .author  {
+    display: block;
+}
+.post-card-style-4 .blog-post p.description {
+    text-align: center;
+}
+.post-card-style-4 .description {
+    padding: 25px 40px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #f1f0f0;
+    font-size: 16px;
+}
+.post-card-style-4 .blog-bottom .post-card_category_background,
+.post-card-style-4 .blog-bottom .post-card_read-more,
+.post-card-style-4 .meta .post-card_date,
+.post-card-style-4 .meta .post-card_date_color {
+    background: transparent;
+}
+.post-card-style-4 .blog-bottom {
+    padding: 0 40px;
+    position: relative;
+    width: 100%;    
+    display: table;
+}
+.post-card-style-4 .pull-right {
+    float: right !important;
+}
+.post-card-style-4 .blog-bottom .post-card_read-more,
+.post-card-style-4 .more-links .cat-links {
+    padding: 0 10px;
+    line-height: 52px;
+    border-bottom: 1px solid #4f4f4f;
+    color: #fe4444;
+    display: inline-block;
+}
+.post-card-style-4 .blog-bottom .post-card_read-more:hover {
+    color: #111;
+}
+.post-card-style-4 .meta .tags-links i.fa,
+.post-card-style-4 .meta .comments-link i.fa {
+    margin-right: 5px;  
+} 
+/*End post catd style 4*/
+
+/*Start post catd style 5*/
+.post-card-style-5 .post-card-container {
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(240, 127, 82, 0.5), 0 1px 2px rgba(240, 127, 82, 0.5);
+}
+.post-card-style-5 .post-card-image {
+    position: relative;
+}
+.post-card-style-5 .entry-content {
+    background: #fff;
+    margin-top: -11px;
+    padding: 30px;
+}
+.post-card-style-5 img {
+    border-style: none;
+    max-width: 100%;
+}
+.post-card-style-5 .iframe {
+    color: #fff;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.post-card-style-5  .title {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+}
+.post-card-style-5 .only-title {
+    min-height: 200px;
+    background: #111;
+}
+.post-card-style-5 .only-title h3.thumb_title {
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+}
+.post-card-style-5 h2::before {
+    display: none;
+}
+.post-card-style-5 .entry-content .title a {
+    color: #f07f52;
+}
+.post-card-style-5 .entry-content .title a:hover {
+    color: #777;
+}  
+.post-card-style-5 .post-meta {
+    color: #777;
+    font-family: 'Playfair Display';
+    font-size: 16px; 
+    font-weight: 700;
+    padding: 15px 0 15px;
+    text-align: center;
+    height: 75px;
+}
+.post-card-style-5 .post-card_title {
+    height: 45px;
+}
+.post-card-style-5 .post-meta .cat-links a {
+    color: #f07f52;
+    padding-right: 15px;
+    position: relative;   
+}
+.post-card-style-5 .post-meta .cat-links a:hover,
+.post-card-style-5 .post-meta .date .day:hover,
+.post-card-style-5 .post-meta .tags-links:hover,
+.post-card-style-5 .post-meta .tags-links:hover a {
+    color: #777;
+} 
+.post-card-style-5 .post-meta .tags-links i.fa {
+    margin-right: 5px;
+    display: none;
+}
+.post-card-style-5 .post-meta .tags-links,
+.post-card-style-5 .post-meta .tags-links a {
+    color: #f07f52;
+    padding-right: 1px;
+    position: relative;    
+}
+.post-card-style-5 .post-meta .post-card_date,
+.post-card-style-5 .post-meta .post-card_date_color,
+.post-card-style-5 .post-bottom .post-card_read-more {
+    background-color: transparent;
+    color: #f07f52;
+}
+.post-card-style-5 .post-meta .date .day::before {
+    content: '/';
+    position: absolute;
+    top: -0px;
+    right: 3px;
+}
+.post-card-style-5 .post-meta .cat-links a::before {
+    content: '/';
+    position: absolute;
+    top: -5px;
+    right: 3px;
+}
+.post-card-style-5 .post-meta a.tag {
+    color: #f07f52;
+}
+.post-card-style-5 .post-meta .date,
+.post-card-style-5 .post-meta .post-card-tags {
+    display: inline-block;
+}
+.post-card-style-5 .description {
+    color: #999;
+    font-family: 'Yantramanav';
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0px;
+}
+.post-card-style-5 .post-bottom {
+    color: #777;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 14px; 
+    padding-top: 10px;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.post-card-style-5 .read-more{
+    float: none;
+    display: table;
+    width: 100%;
+}
+.post-card-style-5 .post-bottom .more-links {
+    display: inline-block;
+    float: left;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+.post-card-style-5 .post-bottom .more-links:hover,
+.post-author .byauthor:hover span a {
+    color: #777;
+}
+.post-card-style-5 .post-bottom .post-author {
+    float: right;
+    display: inline-block; 
+}
+.post-card-style-5 .post-bottom .post-author img {
+    display: inline-block;
+    float: right;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.post-card-style-5 .post-author a {
+    color: #f07f52;
+    font-size: 16px;
+    margin: 10px 0px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+/*End post catd style 5*/
+
+/* Start Post Card 6 CSS */
+.post-card-style-6 .card-like {
+    width: 18px;
+}
+.post-card-style-6 .card-clock {
+    width: 15px;
+    vertical-align: middle;
+    fill: #AD7D52;
+}
+.post-card-style-6 .card-time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.post-card-style-6 .card-clock-info {
+    float: right;
+}
+.post-card-style-6 .card-img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.post-card-style-6 .card-info-hover {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+.post-card-style-6 .card-img-hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+.post-card-style-6 .card {
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.post-card-style-6 .description {
+    margin-left:10px;
+}
+.post-card-style-6 .card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+.post-card-style-6 .card-info {
+    z-index: 2;
+    background-color: #fff !important;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5px 5px 5px 5px;
+}
+.post-card-style-6 .card-category {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+    padding-left: 10px;
+}
+.post-card-style-6 .card-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.post-card-style-6 .card-by {
+    font-size: 12px;
+    font-weight: 500;
+}
+.post-card-style-6 .card:hover .card-img-hover {
+    height: 100%;
+    opacity: 0.3;
+}
+.post-card-style-6 .card:hover .card-info {
+    background-color: transparent !important;
+    position: relative;
+}
+.post-card-style-6 .card:hover .card-info-hover {
+    opacity: 1;
+}
+.post-card-style-6 .description .entry-read-more {
+    color: #0274be;
+    font-weight: 400;
+}
+.post-card-style-6 .card-author span {
+    padding: 5px;
+}
+.post-card-style-6 .card-author {
+    padding-left: 6px;
+}
+.post-card-style-6 .card-author .fa {
+    padding-right: 5px;
+}
+/* End Post Card 6 CSS */

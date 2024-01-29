@@ -1,0 +1,402 @@
+/* Start Recipe Card 1 CSS */
+.recipe-card-style-1 {
+    overflow: hidden;
+}
+.recipe-card-style-1 .recipe-main-container {
+    background-color: #ffffff;
+}
+.recipe-card-style-1 .recipe-img {
+    width: 100%;
+}
+.recipe-card-style-1 .recipe-container {
+    padding: 20px;
+}
+.recipe-card-style-1 .recipe-content {
+    padding-bottom: 15px;
+    border-bottom: 1px solid ;
+}
+.recipe-content h3,
+.recipe-content p,
+.recipe-detail-list p {
+    margin: 0px;
+}
+.recipe-card-style-1 .recipe-detail-list .recipe-detail-no {
+    font-size: 18px;
+    font-weight: 600;
+}
+.recipe-card-style-1 .recipe-detail {
+    display: flex;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.recipe-card-style-1 .recipe-detail .recipe-detail-list {
+    flex: 1;
+}
+.recipe-card-style-1 .elementor-recipe-description-wrapper {
+    margin-bottom: 15px;
+}
+.recipe-card-style-1 .recipe-button {
+    text-align: center;
+}
+.recipe-card-style-1 .recipe-button a {
+    padding: 8px 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.recipe-card-style-1 .recipe-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 62%;
+    top: 0;
+    left: 0;
+}
+.recipe-card-style-1 .recipe-card-share {
+    text-align: right;
+}
+.recipe-card-style-1 .recipe-card-share img {
+    width: 55px;
+}
+/* End Recipe Card 1 */
+
+/* Start Recipe Card 2 CSS */
+.recipe-card-style-2 {
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 20px 1px #f0f1f3;
+    overflow: hidden;
+}
+.recipe-card-style-2 .recipe-main-container {
+    background-color: #000000BF;
+    padding: 135px 15px 15px;
+}
+.recipe-card-style-2 .recipe-detail {
+    display: flex;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.recipe-card-style-2 .recipe-detail .recipe-detail-list {
+    flex: 1;
+}
+.recipe-card-style-2 .elementor-recipe-name-wrapper {
+    color: #e25f13;
+}
+.recipe-card-style-2 .elementor-recipe-type-wrapper {
+    color: #ffffff;
+}
+.recipe-card-style-2 .recipe-detail-no {
+    color: #e25f13;
+    font-size: 18px;
+    font-weight: 600;
+}
+.recipe-card-style-2 .recipe-detail-text {
+    color: #ffffff;
+}
+.recipe-card-style-2 .recipe-content {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff;
+}
+.recipe-card-style-2 .elementor-recipe-description-wrapper {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+.recipe-card-style-2 .recipe-button {
+    padding: 3px 0px;
+}
+.recipe-card-style-2 .recipe-button a {
+    padding: 8px 32px;
+    background-color: #e25f13;
+    color: #ffffff;
+}
+.recipe-card-style-2 .recipe-card-share {
+    text-align: right;
+}
+.recipe-card-style-2 .recipe-card-share img {
+    width: 55px;
+}
+.recipe-card-style-2 .recipe-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* End Recipe Card 2 */
+
+/* Start Recipe Card 3 CSS */
+.recipe-card-style-3 {
+    overflow: hidden;
+}
+.recipe-card-style-3 .recipe-content-min,
+.recipe-card-style-3 .recipe-content-ser,
+.recipe-card-style-3 .recipe-content-ing {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 12.5px 0;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+}
+.recipe-card-style-3 .bg-color {
+    background: #e25f13;
+}
+.recipe-card-style-3 .bg-color-type {
+    background: #e25f13;
+}
+.recipe-card-style-3 .recipe-content-min {
+    top: 15px;
+}
+.recipe-card-style-3 .recipe-content-ser {
+    top: 90px;
+}
+.recipe-card-style-3 .recipe-content-ing {
+    top: 165px;
+}
+.recipe-card-style-3 .recipe-container {
+	background-repeat: no-repeat; 
+	background-size: cover;
+    background-position: center center;
+	height: 240px;
+}
+.recipe-card-style-3 .recipe-detail-no {
+    margin-bottom: 0px;
+    line-height: 0.7;
+    font-size: 20px;
+}
+.recipe-card-style-3 .recipe-container-content {
+    position: relative;
+}
+.recipe-card-style-3 .recipe-content-type {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    padding: 5px 15px;
+}
+.recipe-card-style-3 .elementor-recipe-type-wrapper {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.recipe-card-style-3 .elementor-recipe-name-wrapper {
+    margin-top: 45px;
+}
+.recipe-card-style-3 .recipe-content {
+    padding: 30px 15px 15px;
+}
+.recipe-card-style-3 .elementor-recipe-description-wrapper {
+    color: #d8d8d8;
+    margin-bottom: 10px;
+}
+.recipe-card-style-3 .recipe-button {
+    text-align: center;
+}
+.recipe-card-style-3 .recipe-button a {
+    padding: 8px 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.recipe-card-style-3 .recipe-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 54%;
+    top: 0;
+    left: 0;
+}
+.recipe-card-style-3 .recipe-card-share {
+    text-align: right;
+}
+.recipe-card-style-3 .recipe-card-share img {
+    width: 55px;
+}
+/* End Recipe Card 3 */
+
+/* Start Recipe Card 4 CSS */
+.recipe-card-style-4 {
+    border: 15px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 2px #D1D0D0;
+}
+.recipe-card-style-4 .recipe-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+.recipe-card-style-4 .recipe-button {
+    text-align: right;
+    padding: 30px;
+}
+.recipe-card-style-4 .recipe-button a {
+    padding: 8px 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.recipe-card-style-4 .recipe-detail {
+    display: flex;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+.recipe-card-style-4 .recipe-detail .recipe-detail-list {
+    flex: 1;
+    background: rgba(0,0,0, 0.8);
+    padding: 10px;
+}
+.recipe-card-style-4 .elementor-recipe-name-wrapper {
+    background: rgba(0,0,0,0.8);
+    padding: 5px;
+    padding-left: 15px;
+    width: 65%;
+}
+.recipe-card-style-4 .recipe-card-share {
+    text-align: right;
+}
+.recipe-card-style-4 .recipe-card-share img {
+    width: 55px;
+}
+.recipe-card-style-4 .recipe-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* End Recipe Card 4 */
+
+
+/* Start Recipe Card 5 CSS */
+.recipe-card-style-5 {
+    border: 15px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 2px #D1D0D0;
+}
+.recipe-card-style-5 .recipe-left {
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+}
+.recipe-card-style-5 .recipe-right {
+    width: 69%;
+    display: inline-block;
+}
+.recipe-card-style-5 .recipe-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+    padding: 50%;
+}
+.recipe-card-style-5 .recipe-button {
+    text-align: right;
+    padding: 30px;
+}
+.recipe-card-style-5 .recipe-button a {
+    padding: 8px 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.recipe-card-style-5 .recipe-detail {
+    display: flex;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+.recipe-card-style-5 .recipe-detail .recipe-detail-list {
+    flex: 1;
+    background: rgba(0,0,0);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 30px;
+    max-width: 120px;
+
+}
+.recipe-card-style-5 .elementor-recipe-name-wrapper {
+    background: rgba(0,0,0);
+    padding: 5px;
+    padding-left: 15px;
+    width: 100%;
+}
+.recipe-card-style-5 .recipe-card-share {
+    text-align: right;
+}
+.recipe-card-style-5 .recipe-card-share img {
+    width: 55px;
+}
+.recipe-card-style-5 .recipe-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.recipe-card-style-5 .recipe-card-flip-box {
+    background-color: transparent;
+    perspective: 1000px;
+}
+.recipe-card-style-5 .recipe-card-flip-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.recipe-card-style-5 .recipe-card-flip-box:hover .recipe-card-flip-inner {
+    transform: rotateY(180deg);
+}
+.recipe-card-style-5 .recipe-card-flip-box-front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.recipe-card-style-5 .recipe-card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: 0;
+}
+.recipe-card-style-5 .recipe-card-flip-front {
+    background-color: rgba(0,0,0, 0.9);
+    color: #ffffff;
+    border-radius: 50%;
+}
+.recipe-card-style-5 .recipe-card-flip-back {
+    background-color: rgba(0,0,0, 0.9);
+    color: #ffffff;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+.recipe-card-style-5 .recipe-card-flip-back h4 {
+    color: #ffffff;
+    position: relative;
+    top: 42%;
+}
+.elementor-recipe-name-wrapper {
+    padding: 10px;
+}
+/* End Recipe Card 5 */

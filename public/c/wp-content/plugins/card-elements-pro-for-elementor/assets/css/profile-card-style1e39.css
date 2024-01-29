@@ -1,0 +1,769 @@
+/* Start Profile Card 1 CSS */
+.profile-card-style-1 .team-member {
+    box-shadow: 0 10px 50px rgba(4,75,194,0.2);
+    border: none;
+}
+.profile-card-style-1 .team-member {
+    border-radius: 30px 30px 0 30px;
+    transition: all 0.35s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    overflow: hidden;
+    position: relative;
+}
+.profile-card-style-1 .team-member-profile {
+    padding: 0;
+}
+.profile-card-style-1 .team-member-profile img {
+    border-radius: 5px 5px 0 0;
+}
+.profile-card-style-1 .team-member-info {
+    text-align: center;
+    padding: 30px;
+}
+.profile-card-style-1 .profile-description {
+    text-align: center;
+    font-size: 14px;
+}
+.profile-card-style-1 .profile-name {
+    margin: 0;
+}
+.profile-card-style-1 .team-member-info {
+    text-align: center;
+    background: #FF337F;
+}
+.profile-card-style-1 .team-member__socialmedia {
+    position: absolute;
+    top: 40px;
+    right: 3%;
+    background: #FF337F;
+    padding: 5px 20px;
+    border-radius: 24px 24px 0 24px;
+    box-shadow: 0 6px 21px rgba(2,2,2,0.3);
+    transition: all .25s ease-in-out;
+}
+.profile-card-style-1 .team-member__socialmedia {
+    margin: 0;
+}
+.profile-card-style-1 .team-member__socialmedia a i {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 8px;
+}
+.profile-card-style-1 .team-member__socialmedia .elementor-social-icon {
+    background-color: transparent;
+}
+.profile-card-style-1  .team-member:hover .team-member__socialmedia {
+    right: 0;
+}
+.profile-card-style-1 .team-member:hover {
+    box-shadow: 0 20px 60px rgba(4,75,194,0.2);
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.profile-card-style-1 .team-member:hover {
+    transform: translate3d(0, -20px, 0);
+}
+/* End Profile Card 1 CSS */
+
+/* Start Profile Card 2 CSS */
+.profile-card-style-2 .team-member {
+    position: relative;
+    padding: 0 20px;
+}
+.profile-card-style-2 .team-member-profile {
+    display: inline-block;
+}
+.profile-card-style-2 .team-member-profile img {
+    border-radius: 50%;
+    border: 20px solid #fff;
+    box-shadow: 0 8px 21px #E1E7FF;
+}
+.profile-card-style-2 .profile-description {
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+}
+.profile-card-style-2 .team-member-info {
+    padding: 63px 40px 20px;
+    box-shadow: 0 6px 21px rgba(1,1,1,0.2);
+    border-radius: 34px 34px 0 34px;
+    margin-top: -40px;
+}
+.profile-card-style-2 .team-member__socialmedia {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background: #FF337F;
+    padding: 5px 28px;
+    border-radius: 24px 24px 0 24px;
+    box-shadow: 0 6px 21px rgba(2,2,2,0.3);
+    transition: all .25s ease-in-out;
+}
+.profile-card-style-2 .team-member__socialmedia ul {
+    margin: 0;
+}
+.profile-card-style-2 .team-member__socialmedia ul li {
+    display: inline;
+}
+.profile-card-style-2 {
+    list-style: none;
+    margin-bottom: 50px;
+}
+.profile-card-style-2 .team-member__socialmedia a i {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+.profile-card-style-2 .team-member:hover .team-member__socialmedia {
+    right: 60px;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.profile-card-style-2 .team-member__socialmedia .elementor-social-icon {
+    background-color: transparent;
+}
+/* End Profile Card 2 CSS */
+
+/* Start Profile Card 3 CSS */
+.profile-card-style-3 .team-member__picture {
+    padding: 0 15px;
+    margin: 0 15px;
+}
+.profile-card-style-3 .team-member__picture img {
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.02, 0.54, 0.58, 1);
+    border: 20px solid #fff;
+    box-shadow: 0 6px 21px rgba(2,2,2,0.3);
+}
+.profile-card-style-3 .team-member {
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 6px 21px rgba(2,2,2,0.3);
+}
+.profile-card-style-3 .team-member:hover {
+    opacity: 0.8;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translate3d(0, -20px, 0);
+}
+.profile-card-style-3.team-member:hover .team-member__picture img {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translate3d(0, -8px, 0);
+}
+.profile-card-style-3 .profile-description {
+    padding: 15px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.profile-card-style-3 .team-member__info {
+    text-align: center;
+}
+.profile-card-style-3 .profile-name {
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+.profile-card-style-3 .profile-position {
+    margin-bottom: 15px;
+}
+/* End Profile Card 3 CSS */
+
+/* Start Profile Card 4 CSS */
+.profile-card-style-4 {
+    max-width:300px;
+    background-color:#FFF;
+    border-radius:5px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+}
+.profile-card-style-4 img {
+    transition:all 0.25s linear;
+}
+.profile-card-style-4 .profile-content {
+    position:relative;
+    padding:15px;
+    background-color:#FFF;
+}
+.profile-card-style-4 .profile-name {
+    font-weight:bold;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:-70px;
+    color:#FFF;
+    font-size:17px;
+}
+.profile-card-style-4 .profile-name p {
+    font-weight:600;
+    letter-spacing:1.5px;
+    font-family: Open Sans;
+    font-size: 18px;
+    color:#ffffff;
+}
+.profile-card-style-4 .profile-position {
+    font-family: Open Sans;
+    font-size: 14px;
+    color:#fff;
+}
+.profile-card-style-4 .profile-description {
+    color:#333;
+    font-size:14px;
+    padding:10px;
+}
+.profile-card-style-4 .profile-overview {
+    padding:15px 0px;
+}
+.profile-card-style-4 .profile-overview p {
+    font-size:10px;
+    font-weight:600;
+    color:#fff;
+}
+.profile-card-style-4 .profile-overview h4 {
+    color:#fff;
+    font-weight:bold;
+}
+.profile-card-style-4 .profile-content .profile-bg {
+    content:"";
+    position:absolute;
+    height:20px;
+    top:-10px;
+    left:0px;
+    right:0px;
+    background-color:#FFF;
+    z-index:0;
+    transform:skewY(3deg);
+}
+.profile-card-style-4:hover img {
+    transform:rotate(5deg) scale(1.1,1.1);
+    filter:brightness(110%);
+}
+/* End Profile Card 4 CSS */
+
+/* Start Profile Card 5 CSS */
+.profile-card-style-5 .ct-team-member-default,
+.profile-card-style-5 .ct-team-member-layout {
+    text-align: center;
+    position: relative;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-image {
+    margin-bottom: 14px;
+}
+.profile-card-style-5 .ct-team-member-inner {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+}
+.profile-card-style-5 .ct-team-member-default .ct-team-image,
+.profile-card-style-5 .ct-team-member-layout .ct-team-image {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-holder {
+    padding-bottom: 10px;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-image:before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6747ee), to(rgba(145, 36, 220, 0.2)));
+    background-image: -webkit-linear-gradient(bottom, #6747ee, rgba(145, 36, 220, 0.2));
+    background-image: -moz-linear-gradient(bottom, #6747ee, rgba(145, 36, 220, 0.2));
+    background-image: -ms-linear-gradient(bottom, #6747ee, rgba(145, 36, 220, 0.2));
+    background-image: -o-linear-gradient(bottom, #6747ee, rgba(145, 36, 220, 0.2));
+    background-image: linear-gradient(bottom, #6747ee, rgba(145, 36, 220, 0.2));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#6747ee', endColorStr='rgba(145, 36, 220, 0.2)');
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-image img {
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-image .ct-team-social {
+    z-index: 1;
+}
+.profile-card-style-5 .elementor-social-icon {
+    background-color: transparent;
+}
+.profile-card-style-5 .ct-team-member-default .ct-team-image .ct-team-social,
+.profile-card-style-5 .ct-team-member-layout .ct-team-image .ct-team-social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    opacity: 0;
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-image .ct-team-social p {
+    font-size: 14px;
+    color: #fff;
+    padding: 0px;
+    position: relative;
+    top: 20px;
+}
+.profile-card-style-5 .ct-team-member-default .ct-team-image .ct-team-social a,
+.profile-card-style-5 .ct-team-member-layout .ct-team-image .ct-team-social a {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 6px;
+}
+.profile-card-style-5 .ct-team-member-default .ct-team-position,
+.profile-card-style-5 .ct-team-member-layout .ct-team-position {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.profile-card-style-5 .ct-team-member-layout .ct-team-title {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.profile-card-style-5 .ct-team-member-default .ct-team-title,
+.profile-card-style-5 .ct-team-member-layout .ct-team-title {
+    margin-bottom: 4px;
+}
+.profile-card-style-5 .ct-team-member-default:hover .ct-team-social,
+.profile-card-style-5 .ct-team-member-layout:hover .ct-team-social {
+    bottom: 30px;
+    opacity: 1;
+}
+.profile-card-style-5 .ct-team-member-default:hover .profile-description,
+.profile-card-style-5 .ct-team-member-layout:hover .profile-description {
+    bottom: 24px;
+    opacity: 1;
+}
+.profile-card-style-5 .ct-team-member-default:hover .ct-team-image img,
+.profile-card-style-5 .ct-team-member-layout:hover .ct-team-image img {
+    opacity: 0.8;
+}
+/* End Profile Card 5 CSS */
+
+/* Start Card Elements 6 CSS*/
+.profile-card-style-6 {
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center center;
+    padding-top:100px;
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+    max-width:300px;
+}
+.profile-card-style-6 .profile-content {
+    position:relative;
+    background-color:#888;
+    padding:70px 20px 20px 20px;
+    text-align:center;
+}
+.profile-card-style-6 .profile-img {
+    position:absolute;
+    height:100px;
+    left:0px;
+    right:0px;
+    z-index:10;
+    top:-50px;
+    transition:all 0.25s linear;
+    transform-style: preserve-3d;
+}
+.profile-card-style-6 .profile-img img {
+    height:100px;
+    margin:auto;
+    border-radius:50%;
+    border:5px solid #FFF;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+.profile-card-style-6 .profile-name {
+    font-size:18px;
+    font-weight:bold;
+    font-family: Open Sans;
+    color:#fff;
+}
+.profile-card-style-6 .profile-position {
+    color:#fff;
+    font-size: 12px;
+    margin: 0px 0px 15px 0px;
+}
+.profile-card-style-6 .profile-description {
+    font-size:14px;
+    padding:5px 10px;
+    color:#fff;
+}
+.profile-card-style-6 .profile-icons .fa {
+    margin:5px;
+    color:#fff;
+}
+.profile-card-style-6:hover{
+    box-shadow:0px 0px 50px rgba(0,0,0,0.1);
+}
+.profile-card-style-6:hover .profile-img {
+    transform:rotateY(180deg);
+}
+.profile-card-style-6 .elementor-social-icon {
+    font-size: 15px;
+}
+/* End Card Elements 6 CSS*/
+
+/* Start Card Elements 7 CSS*/
+.profile-card-style-7 {
+    max-width:300px;
+    background-color:#FFF;
+    border-radius:5px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+    padding:50px 15px 25px 15px;
+}
+.profile-card-style-7 .profile img {
+    height:100px;
+    width:100px;
+    object-fit:cover;
+    margin:10px auto;
+    border-radius:50%;
+    transition:all linear 0.25s;
+    position:relative;
+}
+.profile-card-style-7 .profile-bg {
+    content:"";
+    position:absolute;
+    top:-60px;
+    right:0px;
+    left:0px;
+    height:170px;
+    background-color:#4fb96e;
+    transform:skewY(-20deg);
+}
+.profile-card-style-7 .profile-name {
+    font-family: Open Sans;
+    font-size: 18px;
+    color: #3a3a3a;
+    padding-top:15px;
+    font-weight: bold;
+}
+.profile-card-style-7 .profile-position {
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #353535;
+}
+.profile-card-style-7 .profile-description {
+    font-size:14px;
+    color:#666;
+    padding:10px;
+}
+.profile-card-style-7 .profile-overview {
+    padding:15px 0px;
+}
+.profile-card-style-7 .profile-overview p {
+    color:#777;
+    font-size:13px;
+}
+.profile-card-style-7 .profile-overview h2 {
+    font-weight:bold;
+    color:#1e2832;
+}
+.profile-card-style-7 .profile-icons .fa {
+    margin:7px;
+    color:#fff;
+}
+.profile-card-style-7:hover img{
+    transform:rotate(-5deg);
+}
+.profile-card-style-7 .elementor-social-icon {
+    font-size: 15px;
+}
+/* End Card Elements 7 CSS*/
+
+/* Start Card Elements 8 CSS*/
+.profile-card-style-8 {
+    max-width:300px;
+    background-color:#FFF;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    background-position:center;
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+    border-radius:10px;
+    max-height: 300px;
+}
+.profile-card-style-8 img {
+    transition:all linear 0.25s;
+    opacity: 0.5;
+}
+.profile-card-style-8 .profile-name {
+    font-family: Open Sans;
+    font-size: 18px;
+    color:#141414;
+    position:absolute;
+    left:30px;
+    bottom:70px;
+    text-shadow:0px 0px 20px rgba(0,0,0,0.5);
+    font-weight:bold;
+    transition:all linear 0.25s;
+}
+.profile-card-style-8 .profile-icons {
+    position:absolute;
+    bottom:10px;
+    right:50px;
+    color:#FFF;
+    transition:all linear 0.25s;
+}
+.profile-card-style-8 .profile-username {
+    font-family: Open Sans;
+    font-size: 14px;
+    color:#141414;
+    position:absolute;
+    bottom:50px;
+    left:30px;
+    transition:all linear 0.25s;
+}
+.profile-card-style-8 .profile-icons .fa {
+    margin:5px;
+}
+.profile-card-style-8:hover img{
+    filter:grayscale(100%);
+}
+.profile-card-style-8:hover .profile-name {
+    bottom:80px;
+}
+.profile-card-style-8:hover .profile-username {
+    bottom:60px;
+}
+.profile-card-style-8 .profile-description {
+    position: absolute;
+    color:#141414;
+    top: -25px;
+    padding: 30px;
+    transition:all linear 0.25s;
+    font-size: 14px;
+}
+.profile-card-style-8:hover .profile-description {
+    position: absolute;
+    top: 40px;
+    transition:all linear 0.25s;
+}
+.profile-card-style-8:hover .profile-icons {
+    right:40px;
+}
+.profile-card-style-8 .elementor-social-icon {
+    font-size: 12px;
+}
+/* End Card Elements 8 CSS*/
+
+/* Start Card Elements 9 CSS*/
+.profile-card-style-9 {
+    border-radius:5px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+    padding:30px 15px;
+    background-color:#121212;
+    color:#EEE;
+}
+.elementor .profile-card-style-9 img {
+    margin:10px auto;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:10px solid transparent;
+    box-shadow:0px 0px 0px 2px #64c17b;
+    transition: all 0.25s linear;
+}
+.profile-card-style-9 .profile-name {
+    font-family: Open Sans;
+    font-size: 18px;
+    color:#fff;
+    font-weight:bold;
+}
+.profile-card-style-9 .profile-position {
+    font-family: Open Sans;
+    font-size: 14px;
+    color:#ddd;
+    opacity:0.7;
+}
+.profile-card-style-9 .profile-description {
+    padding:10px;
+    font-size:14px;
+    color:#ccc;
+}
+.profile-card-style-9 .profile-icons .fa {
+    color:#fff;
+    margin:10px;
+}
+.profile-card-style-9:hover img {
+    transform:scale(1.1);
+}
+.profile-card-style-9 .elementor-social-icon {
+    font-size: 15px;
+    padding: 0;
+}
+/* End Card Elements 9 CSS*/
+
+/* Start Card Elements 10 CSS*/
+.profile-card-style-10 {
+    background-color:#5fb572;
+    border-radius:5px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    position:relative;
+    margin:10px auto;
+    cursor:pointer;
+    padding:25px 15px;
+}
+.profile-card-style-10 .profile-name {
+    font-weight:bold;
+    color:#fff;
+    font-size:18px;
+}
+.profile-card-style-10 .profile-position {
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+}
+.elementor .profile-card-style-10 img {
+    height:100px;
+    width:100px;
+    object-fit:cover;
+    margin:10px auto;
+    border-radius:50%;
+    transition:all linear 0.25s;
+}
+.profile-card-style-10 .profile-description {
+    font-family: Open Sans;
+    font-size: 14px;
+    color:#fff;
+    padding:10px;
+}
+.profile-card-style-10 .profile-icons {
+    margin:15px 0px;
+}
+.profile-card-style-10 .profile-icons .fa {
+    color:#fff;
+    margin:5px;
+}
+.profile-card-style-10:hover img {
+    height:110px;
+    width:110px;
+    margin:5px auto;
+}
+.profile-card-style-10 .elementor-social-icon {
+    font-size: 15px;
+}
+/* End Card Elements 10 CSS*/
+
+/* Start Profile Card 11 CSS */
+.profile-card-style-11 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.profile-card-style-11 .triangle-div {
+    width:50px;
+    height:50px;
+    border-top: solid 30px #C81E32;
+    border-left: solid 30px #C81E32;
+    border-right: solid 30px transparent;
+    border-bottom: solid 30px transparent;
+}
+.profile-card-style-11 .name, .profile-card-style-11 .position, .profile-card-style-11 .description {
+    background-color:#C81E32;
+    padding:5px 15px;
+    margin:5px 0;
+    color:#fff;
+    font-weight:600;
+}
+.profile-card-style-11 .name {
+    font-size:22px;
+}
+.profile-card-style-11 .position {
+    font-size:16px;
+}
+.profile-card-style-11 .title {
+    margin-top:50%;
+    height:190px;
+    width:0;
+    overflow: hidden;
+    -webkit-transition: width .5s;
+    -ms-transition: width .5s;
+    -moz-transition: width .5s;
+    transition: width .5s;
+}
+.profile-card-style-11:hover {
+    opacity:.8;
+}
+.profile-card-style-11:hover .title {
+    display:block;
+    width:75%;
+}
+.profile-card-style-11 .team-member__socialmedia {
+    display: inline;
+    position: absolute;
+    top: 40%;
+    right: -10px;
+    background: #FF337F;
+    border-radius: 24px 24px 0 24px;
+    box-shadow: 0 6px 21px rgba(2,2,2,0.3);
+    transition: all .25s ease-in-out;
+}
+.profile-card-style-11 .team-member__socialmedia a:first-child {
+    margin-left:5px;
+}
+.profile-card-style-11 .team-member__socialmedia a:last-child {
+    margin-right:5px !important;
+}
+.profile-card-style-11 .elementor-icon {
+    margin:5px 0px !important;
+}
+.profile-card-style-11 .team-member__socialmedia ul {
+    margin: 0;
+}
+.profile-card-style-11 .team-member__socialmedia ul li {
+    display: inline;
+}
+.profile-card-style-11 {
+    list-style: none;
+    margin-bottom: 50px;
+}
+.profile-card-style-11 .team-member__socialmedia a i {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+.profile-card-style-11:hover .team-member__socialmedia {
+    right: 60px;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.profile-card-style-11 .team-member__socialmedia .elementor-social-icon {
+    background-color: transparent;
+}
+/* End Profile Card 11 CSS */
