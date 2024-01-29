@@ -11,7 +11,7 @@ class AdminController extends Controller
     // view all categories from db
     public function view_category()
     {
-        $data = category::all();
+        $data = Category::all();
         return view('admin.category', compact('data'));
     }
 
@@ -19,7 +19,7 @@ class AdminController extends Controller
     // and stay on the same page
     public function add_category(Request $request)
     {
-        $data = new category;
+        $data = new Category();
         $data->category_name = $request->category;
         $data->save();
         return redirect()->back()->with('message', 'Category Added Successfully!');
@@ -28,20 +28,20 @@ class AdminController extends Controller
     // delete the category, display msg for successful deletion and return to same pg
     public function delete_category($id)
     {
-        $data = category::find($id);
+        $data = Category::find($id);
         $data->delete();
         return redirect()->back()->with('message', 'Category Deleted Successfully');
     }
     // view and manage product content $ pass the categories to this view
     public function view_products()
     {
-        $category = category::all();
+        $category = Category::all();
         return view('admin.product', compact('category'));
     }
     // create a new product
     public function add_product(Request $request)
     {
-        $product = new product;
+        $product = new Product();
         $product->title = $request->title;
         $product->short_description = $request->short_description;
         $product->long_description = $request->long_description;
@@ -71,5 +71,11 @@ class AdminController extends Controller
         $product->save();
 
         return redirect()->back()->with('message', 'Product Successfully Uploaded.');
+    }
+
+    // View all products added to the shop
+    public function show_products(){
+        $data = Product::all();
+        return view('admin.show_products', compact('data'));
     }
 }
