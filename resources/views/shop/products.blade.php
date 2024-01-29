@@ -291,21 +291,23 @@
                 </div>
                 <ul class="products-loop row grid clearfix" id="product_listing">
 
-
+                    @foreach ($products as $product)
+                        
+                   
                     <li
                         class="item col-lg-4 col-md-6 col-sm-6 col-xs-6 post-12246 product type-product status-publish has-post-thumbnail product_cat-male-grooming-products product_tag-after-shave product_tag-aftershave product_tag-fresh-scent product_tag-pampering-aftershave product_tag-refreshing-aftershave first instock shipping-taxable purchasable product-type-simple">
                         <div class="products-entry item-wrap clearfix">
                             <div class="item-detail">
                                 <div class="item-img products-thumb">
-                                    <a href="../product/4711-after-shave-100ml/index.html"><img width="400"
+                                    <a href="#"><img width="400"
                                             height="400"
-                                            src="../c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-400x400.jpg"
+                                            src="product/{{$product->image}}"
                                             class="attachment-shop_catalog size-shop_catalog wp-post-image"
-                                            alt="4711_originaleaudecologne_aftershavelotion_100ml_base_image-1"
+                                            alt="{{$product->title}}"
                                             decoding="async"
-                                            srcset="https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-400x400.jpg 400w, https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-300x300.jpg 300w, https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-150x150.jpg 150w, https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-768x768.jpg 768w, https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1-100x100.jpg 100w, https://guardianhealthpharmacy.com/c/wp-content/uploads/2023/05/4711_originaleaudecologne_aftershavelotion_100ml_base_image-1.jpg 935w"
+                                            srcset="product/{{$product->image}} 400w, product/{{$product->image}} 300w, product/{{$product->image}} 150w, product/{{$product->image}} product/{{$product->image}} 100w, product/{{$product->image}} 935w"
                                             sizes="(max-width: 400px) 100vw, 400px"
-                                            title="4711_originaleaudecologne_aftershavelotion_100ml_base_image-1"></a>
+                                            title="{{$product->title}}"></a>
                                     <div class="item-center">
                                         <div class="button-group">
 
@@ -338,24 +340,21 @@
                                                 data-type="quickview" data-ajax_url="/?wc-ajax=%%endpoint%%">Quick
                                                 View </a>
                                         </div>
-                                        <a href="index5970.html?add-to-cart=12246" data-quantity="1"
+                                        <a href="#" data-quantity="1"
                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                             data-product_id="12246" data-product_sku=""
-                                            aria-label="Add &ldquo;4711 After Shave 100ml&rdquo; to your cart"
+                                            aria-label="Add &ldquo;{{$product->title}}&rdquo; to your cart"
                                             rel="nofollow">Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="item-content products-content 1234">
                                     <div class="categories-name"><a
-                                            href="../product-category/personal-care/male-grooming-products/index.html">Male
-                                            Grooming products</a></div>
-                                    <h4><a href="../product/4711-after-shave-100ml/index.html"
-                                            title="4711 After Shave 100ml">4711 After Shave 100ml</a></h4>
+                                            href="#">{{$product->category}}</a></div>
+                                    <h4><a href="#"
+                                            title="{{$product->title}}">{{$product->title}}</a></h4>
                                     <span class="item-price"><span class="woocommerce-Price-amount amount"><bdi><span
-                                                    class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;30,000</bdi></span></span>
-                                    <div class="item-description">The After Shave Lotion version of the classic
-                                        4711 Original Eau de Cologne fragrance provides you with a pleasant
-                                        fresh&hellip;</div>
+                                                    class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;{{$product->price}}</bdi></span></span>
+                                    <div class="item-description">{{$product->short_description}}</div>
                                     <div class="reviews-content">
                                         <div class="star">
                                             <span class="rating-0"></span>
@@ -365,21 +364,17 @@
                             </div>
                         </div>
                     </li>
-
+                    @endforeach
  
 
                 </ul>
                 <div class="clear"></div>
-                <nav class="woocommerce-pagination">
-                    <ul class='page-numbers'>
-                        <li><span aria-current="page" class="page-numbers current">1</span></li>
-                        <li><a class="page-numbers" href="page/2/index.html">2</a></li>
-                        <li><span class="page-numbers dots">&hellip;</span></li>
-                        <li><a class="page-numbers" href="page/136/index.html">136</a></li>
-                        <li><a class="page-numbers" href="page/137/index.html">137</a></li>
-                        <li><a class="next page-numbers" href="page/2/index.html">&rarr;</a></li>
-                    </ul>
-                </nav>
+
+
+{{-- Pagination of the products --}}
+                {!!$products->withQueryString()->links('pagination::bootstrap-5')!!}
+
+
             </div>
         </div>
 

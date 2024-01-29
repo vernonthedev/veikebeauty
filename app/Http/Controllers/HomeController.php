@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Category;
-
+use App\Models\Product;
 class HomeController extends Controller
 {
     // home page
     public function index()
     {
         $category = Category::all();
+        $products = Product::all();
         return view('home.userpage',compact('category'));
     }
     // route to dashboard if user is a normal user of 0 and 1 to admin to admin panel
@@ -27,7 +28,9 @@ class HomeController extends Controller
     // function to handle to shop page data and content
     public function shop()
     {
-        return view('shop.index');
+        $category = Category::all();
+        $products = Product::paginate(15);
+        return view('shop.index', compact('products','category'));
     }
 
     public function contact_us(){
