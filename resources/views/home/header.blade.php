@@ -36,10 +36,8 @@
                                     <div class="elementor-element elementor-element-d034d62 elementor-widget elementor-widget-wp-widget-woocommerce_currency_converter"
                                         data-id="d034d62" data-element_type="widget"
                                         data-widget_type="wp-widget-woocommerce_currency_converter.default">
-                                        <div class="elementor-widget-container"
-                                        >
-                                            <form method="post" class="currency_converter"
-                                                action="">
+                                        <div class="elementor-widget-container">
+                                            <form method="post" class="currency_converter" action="">
                                                 <ul class="currency_w">
                                                     <li><a href="#" class="">UGX</a>
                                                         <ul class="currency_switcher">
@@ -106,7 +104,7 @@
                                                     class="attachment-full size-full" alt="veike beauty logo"
                                                     srcset=""
                                                     sizes="(max-width: 565px) 100vw, 565px" title="Veike Beauty" /> --}}
-                                                    <h1>Veike Beauty</h1>
+                                                <h1>Veike Beauty</h1>
                                             </a>
                                         </div>
                                     </div>
@@ -128,8 +126,7 @@
                                                             <div id="sw_woo_search_1" class="search input-group"
                                                                 data-height_image="50" data-width_image="50"
                                                                 data-show_image="1" data-show_price="1"
-                                                                data-character="3" data-limit="5"
-                                                                data-search_type="0">
+                                                                data-character="3" data-limit="5" data-search_type="0">
                                                                 <div class="cat-wrapper">
                                                                     <label class="label-search">
                                                                         <select name="category_product"
@@ -500,15 +497,71 @@
 
                                             <div class="top-login">
                                                 <ul>
-                                                    <li>
-                                                        {{-- <a href="javascript:void(0);" title="Login"class="login"
+                                                    @if (Route::has('login'))
+                                                    @auth
+
+                                                    <div class="elementor-element elementor-element-104d3d1 elementor-widget elementor-widget-wp-widget-sw_woocommerce_minicart_ajax"
+                                                    data-id="104d3d1" data-element_type="widget"
+                                                    data-widget_type="wp-widget-sw_woocommerce_minicart_ajax.default">
+
+
+                                                    <div class="elementor-widget-container">
+                                                        <div
+                                                            class="top-form top-form-minicart mallonminicart3 pull-right">
+                                                            <div class=" pull-right">
+                                                                <h4 style="font-size: 15px; font-weight:bold;">{{ Auth::user()->username }}'s account</h4>
+                                                            </div>
+                                                            <div class="wrapp-minicart">
+                                                                <div class="minicart-padding">
+                                                                    
+                                                                    <ul class="minicart-content">
+                                                                    </ul>
+                                                                    <div class="cart-checkout">
+                                                                       
+                                                                        <div class="cart-links clearfix">
+                                                                            <div class="checkout-link"><a
+                                                                                href="#"
+                                                                                title="Check Out">Orders</a></div>
+                                                                            <div class="cart-link"><a
+                                                                                    href="#"
+                                                                                    title="Cart">Profile</a></div>
+                                                                            <div class="checkout-link">
+                                                                                <form action="{{ route('logout')}}" method="post">
+                                                                                    @csrf
+                                                                                    <a href="">
+                                                                                        <button type="submit" title="Logout" style="border: none; background: none; padding: 0; margin: 0; font: inherit; cursor: pointer;">LOG OUT</button>
+                                                                                        </a>
+                                                                                    
+                                                                                </form>
+                                                                                
+                                                                                </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                        <li>
+                                                            {{-- <a href="javascript:void(0);" title="Login"class="login"
                                                             data-toggle="modal"
                                                             data-target="#login_form"><span>Login</span></a> --}}
-                                                            <a href="{{route('login')}}" title="Login"class="login"
-                                                            ><span>Login</span></a>
-                                                            <a href="{{route('register')}}" title="Register Here" class="login"
-                                                            ><span>Register</span></a>
-                                                    </li>
+                                                           
+                                                            @else
+                                                            <style>
+                                                                .login:hover {
+                                                                    color: white;
+                                                                }
+                                                            </style>
+                                                                <a href="{{ route('login') }}"
+                                                                    title="Login"class="login" style="font-weight:bold;"><span>Login </span></a>
+                                                                    |
+                                                                <a href="{{ route('register') }}" title="Register Here"
+                                                                    class="login" style="font-weight:bold;"><span>Register</span></a>
+                                                            @endauth
+                                                        </li>
+                                                    @endif
                                                 </ul>
                                             </div>
                                         </div>
@@ -516,11 +569,13 @@
                                     <div class="elementor-element elementor-element-104d3d1 elementor-widget elementor-widget-wp-widget-sw_woocommerce_minicart_ajax"
                                         data-id="104d3d1" data-element_type="widget"
                                         data-widget_type="wp-widget-sw_woocommerce_minicart_ajax.default">
+
+
                                         <div class="elementor-widget-container">
                                             <div class="top-form top-form-minicart mallonminicart3 pull-right">
                                                 <div class="top-minicart-icon pull-right">
                                                     <div class="title-cart">
-                                                        <a class="cart-contents" href="cart/index.html"
+                                                        <a class="cart-contents" href="#"
                                                             title="View your shopping cart"><span
                                                                 class="minicart-numbers">0</span><span
                                                                 class="woocommerce-Price-amount amount"><bdi><span
@@ -541,7 +596,7 @@
                                                                                     class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;0</bdi></span></span></span>
                                                             </div>
                                                             <div class="cart-links clearfix">
-                                                                <div class="cart-link"><a href="cart/index.html"
+                                                                <div class="cart-link"><a href="#"
                                                                         title="Cart">View Cart</a></div>
                                                                 <div class="checkout-link"><a
                                                                         href="checkout/index.html"
@@ -719,7 +774,7 @@
                                                         href="faq-need-help/index.html" class="item-link"><span
                                                             class="have-title"><span
                                                                 class="menu-title">FAQ!</span></span></a></li>
-                                         
+
                                             </ul>
                                         </div>
                                     </div>
