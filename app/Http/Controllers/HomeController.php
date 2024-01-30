@@ -62,12 +62,21 @@ class HomeController extends Controller
             $cart->user_id = $user->id;
             // get the prodt infor and send it to cart row
             $cart->product_title = $product->title;
-            $cart->price = $product->price;
-            $cart->discount_price = $product->discount_price;
+
+            // if a product has a discount, then we use that discount price as its original price
+            // else we use the original price from the db
+            if($product->discount_price != null){
+                $cart->price = $product->discount_price * $request->quantity;
+            }else{
+                $cart->price = $product->price * $request->quantity;
+            }
+
             $cart->image = $product->image;
             $cart->Product_id = $product->id;
             // get the total product items from the quantity returned from the web
             $cart->quantity = $request->quantity;
+
+
             $cart->save();
             return redirect()->back();
 
