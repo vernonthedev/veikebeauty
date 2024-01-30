@@ -280,8 +280,9 @@
 
 
                                         <form class="cart"
-                                            action="#"
+                                            action="{{route('add-to-cart',$products->id)}}"
                                             method="post" enctype='multipart/form-data'>
+                                            @csrf
                                             <div class="addcart-wrapper single-buynow clearfix">
                                                 <div class="qty qty-text">Quantity:</div>
                                                 <div class="quantity">

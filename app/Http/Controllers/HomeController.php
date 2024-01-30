@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Cart;
+use Illuminate\Http\Request;
+
 class HomeController extends Controller
 {
     // home page with paginated product display
@@ -39,6 +42,41 @@ class HomeController extends Controller
     public function product_details($id){
         $products = Product::find($id);
         return view('shop.details', compact('products'));
+    }
+
+    // add to cart functionality
+    public function add_to_cart(Request $request,$id){
+        // check if user is logged in, if not send him to login page
+        if(Auth::id()){
+            // get logged in user data
+            $user = Auth::user();
+            // get the products info by id from database
+            $product = Product::find($id);
+            //create the cart using the provided user and prdt info
+            $cart = new Cart;
+            // get user info and send it to cart row
+            $cart->username = $user->username;
+            $cart->email = $user->email;
+            $cart->phone = $user->phone;
+            $cart->address = $user->address;
+            $cart->user_id = $user->id;
+            // get the prodt infor and send it to cart row
+            $cart->product_title = $product->title;
+            $cart->price = $product->price;
+            $cart->discount_price = $product->discount_price;
+            $cart->image = $product->image;
+            $cart->Product_id = $product->id;
+            // get the total product items from the quantity returned from the web
+            $cart->quantity = $request->quantity;
+            $cart->save();
+            return redirect()->back();
+
+
+        }else{
+            return redirect('login');
+        }
+
+        return view('shop.cart');
     }
 
     public function contact_us(){

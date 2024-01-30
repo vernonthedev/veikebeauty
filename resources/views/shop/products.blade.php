@@ -346,11 +346,16 @@
                                                 data-type="quickview" data-ajax_url="/?wc-ajax=%%endpoint%%">Quick
                                                 View </a>
                                         </div>
-                                        <a href="#" data-quantity="1"
+                                        {{-- ADDING TO THE CART FUNCTIONALITY --}}
+                                        <form action="{{route('add-to-cart',$product->id)}}" method="post">
+                                            @csrf
+                                            <a data-quantity="1"
                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                            data-product_id="12246" data-product_sku=""
+                                            data-product_id="" data-product_sku=""
                                             aria-label="Add &ldquo;{{$product->title}}&rdquo; to your cart"
-                                            rel="nofollow">Add to cart</a>
+                                            rel="nofollow"><button style="border: none; background: none; padding: 0; margin: 0; font: inherit; cursor: pointer;" type="submit">Add to cart</button></a>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                                 <div class="item-content products-content 1234">
@@ -363,7 +368,7 @@
                                     <div class="item-description">{{$product->short_description}}</div>
                                     <div class="reviews-content">
                                         <div class="star">
-                                            <span class="rating-0"></span>
+                                            <span class="rating-3"></span>
                                         </div>
                                     </div>
                                 </div>

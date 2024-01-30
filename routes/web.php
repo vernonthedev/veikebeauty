@@ -44,3 +44,4 @@ Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact'
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');
 Route::get('/frequently-asked-questions', [HomeController::class, 'faq'])->name('faq');
 Route::get('/product-details/{id}', [HomeController::class, 'product_details'])->name('product_details');
+Route::post('/add-to-cart/{id}', [HomeController::class, 'add_to_cart'])->name('add-to-cart');
