@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <div class="mallon_breadcrumbs">
     <div class="container">
         <div class="listing-title">
@@ -299,7 +305,7 @@
                         <div class="products-entry item-wrap clearfix">
                             <div class="item-detail">
                                 <div class="item-img products-thumb">
-                                    <a href="#"><img width="400"
+                                    <a href="{{route('product_details',$product->id)}}"><img width="400"
                                             height="400"
                                             src="product/{{$product->image}}"
                                             class="attachment-shop_catalog size-shop_catalog wp-post-image"
@@ -350,7 +356,7 @@
                                 <div class="item-content products-content 1234">
                                     <div class="categories-name"><a
                                             href="#">{{$product->category}}</a></div>
-                                    <h4><a href="#"
+                                    <h4><a href="{{route('product_details',$product->id)}}"
                                             title="{{$product->title}}">{{$product->title}}</a></h4>
                                     <span class="item-price"><span class="woocommerce-Price-amount amount"><bdi><span
                                                     class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;{{$product->price}}</bdi></span></span>
