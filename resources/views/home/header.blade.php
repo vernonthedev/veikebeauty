@@ -573,6 +573,7 @@
 
                                         <div class="elementor-widget-container">
                                             <div class="top-form top-form-minicart mallonminicart3 pull-right">
+                                                
                                                 <div class="top-minicart-icon pull-right">
                                                     <div class="title-cart">
                                                         <a class="cart-contents" href="#"
@@ -582,6 +583,7 @@
                                                                         class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;0</bdi></span></a>
                                                     </div>
                                                 </div>
+
                                                 <div class="wrapp-minicart">
                                                     <div class="minicart-padding">
                                                         <div class="number-item">There are <span class="item">0
@@ -596,15 +598,16 @@
                                                                                     class="woocommerce-Price-currencySymbol">UGX</span>&nbsp;0</bdi></span></span></span>
                                                             </div>
                                                             <div class="cart-links clearfix">
-                                                                <div class="cart-link"><a href="#"
+                                                                <div class="cart-link"><a href="{{ route('show-cart')}}"
                                                                         title="Cart">View Cart</a></div>
                                                                 <div class="checkout-link"><a
-                                                                        href="checkout/index.html"
+                                                                        href="#"
                                                                         title="Check Out">Check Out</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>

@@ -45,3 +45,5 @@ Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');
 Route::get('/frequently-asked-questions', [HomeController::class, 'faq'])->name('faq');
 Route::get('/product-details/{id}', [HomeController::class, 'product_details'])->name('product_details');
 Route::post('/add-to-cart/{id}', [HomeController::class, 'add_to_cart'])->name('add-to-cart');
+Route::get('/cart-items', [HomeController::class, 'show_cart'])->name('show-cart');
+Route::get('/remove-cart-item/{id}', [HomeController::class, 'remove_cart_item'])->name('remove-cart');

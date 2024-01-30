@@ -16,7 +16,7 @@ class HomeController extends Controller
     {
         $category = Category::all();
         $products = Product::paginate(15);
-        return view('home.userpage',compact('category'));
+        return view('home.userpage', compact('category'));
     }
     // route to dashboard if user is a normal user of 0 and 1 to admin to admin panel
     public function redirect()
@@ -35,19 +35,21 @@ class HomeController extends Controller
     {
         $category = Category::all();
         $products = Product::paginate(15);
-        return view('shop.index', compact('products','category'));
+        return view('shop.index', compact('products', 'category'));
     }
 
     // Get product details
-    public function product_details($id){
+    public function product_details($id)
+    {
         $products = Product::find($id);
         return view('shop.details', compact('products'));
     }
 
     // add to cart functionality
-    public function add_to_cart(Request $request,$id){
+    public function add_to_cart(Request $request, $id)
+    {
         // check if user is logged in, if not send him to login page
-        if(Auth::id()){
+        if (Auth::id()) {
             // get logged in user data
             $user = Auth::user();
             // get the products info by id from database
@@ -65,9 +67,9 @@ class HomeController extends Controller
 
             // if a product has a discount, then we use that discount price as its original price
             // else we use the original price from the db
-            if($product->discount_price != null){
+            if ($product->discount_price != null) {
                 $cart->price = $product->discount_price * $request->quantity;
-            }else{
+            } else {
                 $cart->price = $product->price * $request->quantity;
             }
 
@@ -79,24 +81,44 @@ class HomeController extends Controller
 
             $cart->save();
             return redirect()->back();
-
-
-        }else{
+        } else {
             return redirect('login');
         }
 
         return view('shop.cart');
     }
 
-    public function contact_us(){
+    // Display the cart items to the usr
+    public function show_cart()
+    {
+        // only return a cart of the logged in user.
+        if (Auth::id()) {
+            $id = Auth::user()->id;
+            $carts = Cart::where('user_id', '=', $id)->get();
+            return view('shop.cart', compact('carts'));
+        } else {
+            return view('login');
+        }
+    }
+
+    public function remove_cart_item($id){
+        $cart = Cart::find($id);
+        $cart->delete();
+        return redirect()->back();
+    }
+
+    public function contact_us()
+    {
         return view('home.contact');
     }
 
-    public function about_us(){
+    public function about_us()
+    {
         return view('home.about');
     }
 
-    public function faq(){
+    public function faq()
+    {
         return view('home.faq');
     }
 }
