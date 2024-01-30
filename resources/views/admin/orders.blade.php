@@ -79,7 +79,9 @@
                                                 <th
                                                 class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
                                                 Delivered</th>
-
+                                                <th
+                                                class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
+                                                Print Order</th>
                                             <th class="text-secondary opacity-7"></th>
                                         </tr>
                                     </thead>
@@ -136,6 +138,9 @@
                                                 @else
                                                 <p class="text font-weight-bold mb-0 justify-content-center">Delivered</p>
                                                 @endif
+                                            </td>
+                                            <td>
+                                                <a href="{{route('print-pdf', $order->id)}}" class="badge badge-sm bg-gradient-success">PDF</a>
                                             </td>
                                         </tr>
                                         @endforeach

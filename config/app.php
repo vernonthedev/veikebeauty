@@ -154,7 +154,6 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
     'providers' => ServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...
@@ -170,6 +169,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        // PROVIDER PACKAGE FOR PDF DOWNLOADS ADD BY DEVELOPER
+        Barryvdh\DomPDF\ServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -185,6 +186,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        // ALIASE FOR THE PDF DOWNLOAD PACKAGE ADDED BY DEVELOPER
+        'PDF' => Barryvdh\DomPDF\Facade::class
     ])->toArray(),
 
 ];
