@@ -337,23 +337,22 @@
                                                 <!-- COUNT TEXT -->
 
                                             </div>
-                                            <div class="woocommerce product compare-button">
-                                                <a href="javascript:void(0)" class="compare button"
-                                                    title="Add to Compare" data-product_id="12246" rel="nofollow">
-                                                </a>
-                                            </div>
-                                            <a href="javascript:void(0)" data-product_id="12246" class="sw-quickview"
-                                                data-type="quickview" data-ajax_url="/?wc-ajax=%%endpoint%%">Quick
-                                                View </a>
-                                        </div>
-                                        {{-- ADDING TO THE CART FUNCTIONALITY --}}
+                                            {{-- ADDING TO THE CART FUNCTIONALITY --}}
                                         <form action="{{route('add-to-cart',$product->id)}}" method="post">
                                             @csrf
+                                            
+                                            <div class="qty qty-text" style="color: white;">Quantity:</div>
+                                            <input type="number" id="quantity_65b6895ef00a8"
+                                                        class="input-text qty text" step="1" min="1"
+                                                        max="10000" name="quantity" value="1" title="Qty"
+                                                        placeholder="" inputmode="numeric" style="width: 100px;" />
+                                        </div>
+                                        
                                             <a data-quantity="1"
                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                             data-product_id="" data-product_sku=""
                                             aria-label="Add &ldquo;{{$product->title}}&rdquo; to your cart"
-                                            rel="nofollow"><button style="border: none; background: none; padding: 0; margin: 0; font: inherit; cursor: pointer;" type="submit">Add to cart</button></a>
+                                            rel="nofollow"><button style="border: black; background: none; padding: 0; margin: 0; font: inherit; cursor: pointer;" type="submit">Add to cart</button></a>
                                         </form>
                                         
                                     </div>
