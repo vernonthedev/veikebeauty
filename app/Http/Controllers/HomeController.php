@@ -117,7 +117,7 @@ class HomeController extends Controller
     foreach($data as $data){
         // for each cart data received, save it into a new order
         $order = new Order;
-        $order->name = $data->user_name;
+        $order->name = $data->username;
         $order->email = $data->email;
         $order->phone = $data->phone;
         $order->address = $data->address;

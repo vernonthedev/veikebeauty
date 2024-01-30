@@ -37,6 +37,8 @@ Route::get('/all_products', [AdminController::class, 'show_products'])->name('sh
 Route::get('/delete_product/{id}', [AdminController::class, 'delete_product'])->name('delete-product');
 Route::get('/update_product/{id}', [AdminController::class, 'update_product'])->name('update-product');
 Route::post('/update_product_confirm/{id}', [AdminController::class, 'update_product_confirm'])->name('update-product-confirm');
+Route::get('/view-all-orders', [AdminController::class, 'view_orders'])->name('view-orders');
+Route::get('/delivered-order/{id}', [AdminController::class, 'delivered_order'])->name('delivered');
 
 // User's Page Routes
 Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
