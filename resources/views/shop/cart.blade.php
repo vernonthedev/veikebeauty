@@ -35,9 +35,11 @@
                     <div class="entry-content">
                         <div class="entry-summary">
                             <div class="woocommerce">
-                                <div class="woocommerce-notices-wrapper"></div>
-                                <p class="cart-empty woocommerce-info">Your cart is currently empty.</p>
 
+                                <div class="woocommerce-notices-wrapper"></div>
+                                @if(session()->has('message'))
+                                <p class="cart-empty woocommerce-info">{{session()->get('message')}}</p>
+                                @endif
                                 <table>
                                     <tr>
                                         <th>Product Title</th>
@@ -73,8 +75,8 @@
                                         Return to shop </a>
                                 </p>
                                 <p class="return-to-shop">
-                                    <a class="button wc-backward" href="{{route('shop')}}">
-                                        Checkout </a>
+                                    <a class="button wc-backward" href="{{route('cash-order')}}">
+                                        Checkout with cash on delivery</a>
                                 </p>
                             </div>
                         </div>

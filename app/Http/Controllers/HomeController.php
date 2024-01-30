@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Cart;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -105,6 +106,40 @@ class HomeController extends Controller
         $cart = Cart::find($id);
         $cart->delete();
         return redirect()->back();
+    }
+
+    public function cash_order()
+    {
+    //    get currently authenticated user that made the order
+    $user = Auth::user();
+    $userid = $user->id;
+    $data = Cart::where('user_id','=',$userid)->get();
+    foreach($data as $data){
+        // for each cart data received, save it into a new order
+        $order = new Order;
+        $order->name = $data->user_name;
+        $order->email = $data->email;
+        $order->phone = $data->phone;
+        $order->address = $data->address;
+        $order->user_id = $data->user_id;
+
+        $order->product_title = $data->product_title;
+        $order->quantity = $data->quantity;
+        $order->image = $data->image;
+        $order->price = $data->price;
+        $order->product_id = $data->Product_id;
+
+        $order->payment_status = 'Cash On Delivery';
+        $order->delivery_status = 'Processing';
+
+        $order->save();
+
+        // delete the cart data after the order has been made
+        $cart_id= $data->id;
+        $cart = Cart::find($cart_id);
+        $cart->delete();
+    }
+    return redirect()->back()->with('message','You Order Has Been Received Successfully! We Will Contact You Soon!');
     }
 
     public function contact_us()
