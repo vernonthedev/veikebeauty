@@ -44,6 +44,7 @@ Route::get('/send-email/{id}', [AdminController::class, 'send_email'])->name('se
 Route::post('/send-user-email/{id}', [AdminController::class, 'send_user_email'])->name('send-user-email');
 
 // User's Page Routes
+Route::get('/search', [HomeController::class, 'product_search'])->name('product-search');
 Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
 Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');

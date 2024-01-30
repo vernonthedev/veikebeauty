@@ -39,6 +39,13 @@ class HomeController extends Controller
         return view('shop.index', compact('products', 'category'));
     }
 
+    // search items
+    public function product_search(Request $request){
+        $search_text = $request->search;
+        $products = Product::where('title', 'LIKE', "%{$search_text}%")->paginate(15);
+        return view('shop.search', compact('products'));
+    }
+
     // Get product details
     public function product_details($id)
     {

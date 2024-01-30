@@ -264,3 +264,18 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="admin/assets/js/material-dashboard.min.js?v=3.1.0"></script>
+
+
+
+<script>
+    // Get the current scroll position before refreshing
+    var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+
+    // Reload the page
+    location.reload();
+
+    // Set the scroll position after the page is reloaded
+    window.onload = function() {
+        window.scrollTo(0, scrollPosition);
+    };
+</script>

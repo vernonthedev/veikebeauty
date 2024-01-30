@@ -122,7 +122,8 @@
                                                     <div class="topsearch-entry">
 
                                                         <form method="GET"
-                                                            action="https://guardianhealthpharmacy.com/">
+                                                            action="{{route('product-search')}}">
+                                                            @csrf
                                                             <div id="sw_woo_search_1" class="search input-group"
                                                                 data-height_image="50" data-width_image="50"
                                                                 data-show_image="1" data-show_price="1"
@@ -141,208 +142,7 @@
                                                                             <option value="personal-care">Beauty &amp;
                                                                                 Personal Care</option>
 
-
-                                                                            <option value="body-skin-care-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body
-                                                                                Skin Care Products</option>
-
-                                                                            <option value="dental-oral-care">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dental
-                                                                                &amp; Oral Care</option>
-
-                                                                            <option value="facial-skin-care-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facial
-                                                                                Skin Care Products</option>
-
-                                                                            <option
-                                                                                value="feminine-hygiene-personal-care">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feminine
-                                                                                Hygiene</option>
-
-                                                                            <option value="fragrances">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fragrances
-                                                                            </option>
-
-                                                                            <option value="hair-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair
-                                                                                Care Products</option>
-
-                                                                            <option
-                                                                                value="hands-nails-and-lipcare-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hands,
-                                                                                Nails And Lipcare Products</option>
-
-                                                                            <option value="male-grooming-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male
-                                                                                Grooming products</option>
-
-                                                                            <option value="shower-essentials">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shower
-                                                                                Essentials</option>
-
-
-                                                                            <option value="health-and-medicine">Health
-                                                                                and Medicine</option>
-
-
-                                                                            <option value="cold-flu">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colds,
-                                                                                Flu &amp; Allergies</option>
-
-                                                                            <option value="ear-nose-throat">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ear,
-                                                                                Nose &amp; Throat</option>
-
-                                                                            <option value="eye-care">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eye
-                                                                                Care</option>
-
-                                                                            <option value="gut-health">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gut
-                                                                                Health</option>
-
-                                                                            <option value="pain-inflammation">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pain
-                                                                                &amp; Inflammation</option>
-
-                                                                            <option value="prescription-medication">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prescription
-                                                                                Medication</option>
-
-                                                                            <option value="topical-applications">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Topical
-                                                                                Applications</option>
-
-
-                                                                            <option value="home-health-care">Home
-                                                                                Health Care</option>
-
-
-                                                                            <option value="blood-pressure-machines">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blood
-                                                                                Pressure Machines</option>
-
-                                                                            <option value="first-aid">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First
-                                                                                Aid &amp; Sanitization</option>
-
-                                                                            <option value="glucometers-strips">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glucometers
-                                                                                &amp; Strips</option>
-
-                                                                            <option value="orthopedic-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orthopedic
-                                                                                Products</option>
-
-                                                                            <option value="other-medical-devices">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
-                                                                                Medical Devices</option>
-
-                                                                            <option value="sanitation">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitation
-                                                                            </option>
-
-                                                                            <option value="test-kits">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Test
-                                                                                Kits</option>
-
-
-                                                                            <option value="migraine-headache">Migraine
-                                                                                &amp; Headache</option>
-
-
-
-                                                                            <option value="mother-baby">Mother &amp;
-                                                                                Baby</option>
-
-
-                                                                            <option value="baby-care-products">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baby
-                                                                                care products</option>
-
-                                                                            <option
-                                                                                value="baby-cold-flu-allergies-fever">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baby
-                                                                                Cold, Flu, Allergies &amp; Fever
-                                                                            </option>
-
-                                                                            <option value="baby-vitamins">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baby
-                                                                                Multivitamins &amp; Supplements</option>
-
-                                                                            <option value="infant-formula-anti-colics">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Infant
-                                                                                formula &amp; Anti-Colics</option>
-
-                                                                            <option value="mom-essentials">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mom
-                                                                                essentials</option>
-
-
-                                                                            <option
-                                                                                value="multivitamins-and-wellness-supplements">
-                                                                                Multivitamins &amp; Wellness Supplements
-                                                                            </option>
-
-
-                                                                            <option value="general-wellbeing">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General
-                                                                                Wellbeing</option>
-
-                                                                            <option value="immunity-support">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Immunity
-                                                                                Support</option>
-
-                                                                            <option value="joint-and-bone-supplements">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joint
-                                                                                and Bone Supplements</option>
-
-                                                                            <option value="kids-supplements">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kids
-                                                                                Supplements</option>
-
-                                                                            <option value="omega-supplements">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Omega
-                                                                                Supplements</option>
-
-                                                                            <option
-                                                                                value="prenatal-post-natal-vitamins">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prenatal
-                                                                                &amp; Post-Natal Vitamins</option>
-
-
-                                                                            <option value="essential-oils">Pure Oils
-                                                                            </option>
-
-
-
-                                                                            <option value="sexual-reproduction-health">
-                                                                                Sexual &amp; Reproductive Health
-                                                                            </option>
-
-
-                                                                            <option value="condoms">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Condoms,
-                                                                                Lubricants &amp; Emergency Contraception
-                                                                            </option>
-
-                                                                            <option value="male-sexual-health">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male
-                                                                                Sexual Health</option>
-
-                                                                            <option
-                                                                                value="test-kits-sexual-reproduction-health">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Test
-                                                                                Kits</option>
-
-
-                                                                            <option value="sports-nutrition">Sports
-                                                                                &amp; Nutrition</option>
-
-
-                                                                            <option value="protein-powder">
-                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protein
-                                                                                Powder</option>
+      
 
                                                                             <option value="weight-control-detox">
                                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight
@@ -352,21 +152,30 @@
                                                                         </select>
                                                                     </label>
                                                                 </div>
+
+
                                                                 <div class="content-search">
                                                                     <input class="autosearch-input" type="text"
                                                                         value="" size="50"
                                                                         autocomplete="off"
-                                                                        placeholder="Search products" name="s">
+                                                                        placeholder="Search products" name="search">
                                                                     <div class="search-append"></div>
                                                                 </div>
                                                                 <span class="input-group-btn">
                                                                     <button type="submit"
                                                                         class="fa fa-search button-search-pro form-button">Search</button>
                                                                 </span>
-                                                                <input name="search_posttype" value="product"
-                                                                    type="hidden">
+                                                              
                                                             </div>
+
+
+
                                                         </form>
+
+
+
+
+
                                                     </div>
                                                 </div>
                                             </div>
