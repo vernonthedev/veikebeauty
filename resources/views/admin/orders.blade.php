@@ -92,6 +92,7 @@
                                                 
                                                     <div class="d-flex flex-column justify-content-center">
                                                         <p class="text font-weight-bold  text-primary mb-0">{{$order->name}}</p>
+                                                        <a href="{{route('send-email',$order->id)}}" class="text-xs text-secondary mb-0">Send Email</a>
                                                     </div>
                                                 
                                             </td>

@@ -40,6 +40,8 @@ Route::post('/update_product_confirm/{id}', [AdminController::class, 'update_pro
 Route::get('/view-all-orders', [AdminController::class, 'view_orders'])->name('view-orders');
 Route::get('/delivered-order/{id}', [AdminController::class, 'delivered_order'])->name('delivered');
 Route::get('/print-order/{id}', [AdminController::class, 'print_order'])->name('print-pdf');
+Route::get('/send-email/{id}', [AdminController::class, 'send_email'])->name('send-email');
+Route::post('/send-user-email/{id}', [AdminController::class, 'send_user_email'])->name('send-user-email');
 
 // User's Page Routes
 Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
